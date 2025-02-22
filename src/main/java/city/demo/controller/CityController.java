@@ -65,6 +65,7 @@ public class CityController {
 	 */
 	@GetMapping("/list")
 	public List<City> listCity() {
+		System.out.println("1111111");
 		return  cityService.listCity();
 	}
 	
@@ -78,6 +79,7 @@ public class CityController {
 	 */
 	@GetMapping("getCityById")
 	public City selectByPrimaryKey() {
+		System.out.println("1111111");
 		return  cityService.selectByPrimaryKey(1);
 	}
 	
