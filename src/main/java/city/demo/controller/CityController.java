@@ -93,7 +93,7 @@ public class CityController {
 	 */
 	@GetMapping("/{id}")
 	public City getCityById(@PathVariable int id) {
-
+		System.out.println("1111111");
 		return  cityService.selectByPrimaryKey(id);
 	}
 	
@@ -108,12 +108,14 @@ public class CityController {
 	@PutMapping("/{id}")
 	public String updateOne(@PathVariable int id,@RequestBody City city) {
 		//业务逻辑
+		System.out.println("1111111");
 		return  null;
 	}
 	
 	@DeleteMapping("/{id}")
 	public String deleteOne(@PathVariable int id,HttpServletRequest request,@RequestParam(value = "delete_reason",required = false) String deleteReason) {
 		//业务逻辑
+		System.out.println("1111111");
 		return null;
 	}
 }
