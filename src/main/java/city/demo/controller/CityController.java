@@ -51,6 +51,7 @@ public class CityController {
 	 */
 	@PostMapping("/insertValues")
 	public void insertValus(@RequestBody City city) {
+
 		cityService.insertValues(city);
 	}
 	
@@ -65,6 +66,7 @@ public class CityController {
 	 */
 	@GetMapping("/list")
 	public List<City> listCity() {
+
 		return  cityService.listCity();
 	}
 	
@@ -78,6 +80,7 @@ public class CityController {
 	 */
 	@GetMapping("getCityById")
 	public City selectByPrimaryKey() {
+
 		return  cityService.selectByPrimaryKey(1);
 	}
 	
@@ -91,6 +94,7 @@ public class CityController {
 	 */
 	@GetMapping("/{id}")
 	public City getCityById(@PathVariable int id) {
+
 		return  cityService.selectByPrimaryKey(id);
 	}
 	
